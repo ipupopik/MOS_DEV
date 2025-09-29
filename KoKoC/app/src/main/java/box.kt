@@ -10,8 +10,7 @@ class Box<T>(private val value: T) {
 }
 
 fun main() {
-    // Пример 1: Int -> String
-    val intBox = Box(42)
+    val intBox = Box(3)
     val stringBox = intBox.map { it.toString() }
     println("Int -> String: ${stringBox.getValue()} (type: ${stringBox.getValue()::class.simpleName})")
 
