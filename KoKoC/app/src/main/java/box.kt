@@ -14,7 +14,6 @@ fun main() {
     val stringBox = intBox.map { it.toString() }
     println("Int -> String: ${stringBox.getValue()} (type: ${stringBox.getValue()::class.simpleName})")
 
-    // Пример 2: Int -> Boolean
     val boolBox = intBox.map { it > 0 }
     println("Int -> Boolean: ${boolBox.getValue()} (type: ${boolBox.getValue()::class.simpleName})")
 }
